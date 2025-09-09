@@ -6,9 +6,14 @@ header {
   margin: auto;
 }
 
+/* Padding for header child divs */
+.headerContainer {
+  padding-top: 20px;
+}
+
 main {
   max-width: 1280px;
-  margin: 0 auto 8rem auto;
+  margin: 0 auto 80px auto; /* Adds space at the bottom for the footer */
 }
 
 /* Navigation styles */
@@ -57,3 +62,16 @@ nav ul li a:hover {
 .articles > div:last-child {
   margin-right: 0;
 }
+
+/* Footer styles */
+footer{
+  position:static; 
+  /* 
+  Footer Positioning:
+  - position: fixed; keeps the footer always visible at the bottom of the viewport, even when scrolling.
+  - position: static; places the footer after all content, only at the bottom if the page content is
+  */
+  bottom:0;
+  width:100%;
+}
+
