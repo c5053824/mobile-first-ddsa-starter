@@ -1,61 +1,91 @@
 /* Mobile First */
+
+/* Base styles for the page layout and font */
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    padding:0;
-    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Sets a clean, readable font */
+    padding:0; /* Removes default body padding */
+    margin: 0; /* Removes default body margin */
 }
+
+/* Main content area spacing */
 main{
-    margin:0 10px
+    margin:0 10px /* Adds horizontal margin for main content */
 }
+
+/* Header layout using flexbox for responsiveness */
 header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex; /* Enables flexbox layout */
+    flex-wrap: wrap; /* Allows header items to wrap on small screens */
+    justify-content: space-between; /* Spaces header items apart */
 }
+
+/* Padding for header child divs */
 header > div{
-    padding:10px;
+    padding:10px; /* Adds space inside header sections */
 }
+
+/* Container for header background styling */
 .headerContainer{
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.8); /* Semi-transparent dark background */
 }
+
+/* Header title styling */
 header h2{
-    color:#fff;
+    color:#fff; /* White text for header titles */
 } 
+
+/* Articles section layout using flexbox */
 .articles{
-    display: flex;
-    flex-wrap: wrap;
-    gap:10px;
+    display: flex; /* Enables flexbox for articles */
+    flex-wrap: wrap; /* Allows articles to wrap on small screens */
+    gap:10px; /* Adds space between articles */
 }
+
+/* Makes article images responsive */
 .articles img {
-    width: 100%;
+    width: 100%; /* Images fill their container width */
 }
+
+/* Sets width for each article container */
 .articles>div {
-    flex-basis: 45%;
+    flex-basis: 45%; /* Each article takes up about half the row */
 }
+
+/* Navigation list styling */
 nav ul{
-    list-style: none;
-    margin: 0;
-    padding:0;
+    list-style: none; /* Removes default list bullets */
+    margin: 0; /* Removes default margin */
+    padding:0; /* Removes default padding */
 }
+
+/* Navigation list item styling */
 nav ul li{
-    padding:8px 5px;
-    border-bottom: 1px solid #ccc;
+    padding:8px 5px; /* Adds vertical and horizontal padding */
+    border-bottom: 1px solid #ccc; /* Adds a divider between items */
 }
+
+/* Navigation link styling */
 nav ul li a{
-    color:#fff;
-    text-decoration: none;
-    display: block;
+    color:#fff; /* White text for links */
+    text-decoration: none; /* Removes underline from links */
+    display: block; /* Makes links fill the list item area */
 }
+
+/* Navigation container flex settings */
 nav{
-    flex: 1 1 100%;
+    flex: 1 1 100%; /* Makes nav take full width in flex layouts */
 }
+
+/* Footer styling for background and spacing */
 footer{
-    background: rgba(0,0,0,0.8);
-    margin-top: 40px;
-    padding:40px;
+    background: rgba(0,0,0,0.8); /* Semi-transparent dark background */
+    margin-top: 40px; /* Adds space above the footer */
+    padding:40px; /* Adds space inside the footer */
 }
+
+/* Footer text styling */
 footer > div > p{
-    color:#fff;
-    text-align: center;
-    font-size:0.8rem;
+    color:#fff; /* White text for footer */
+    text-align: center; /* Centers footer text */
+    font-size:0.8rem; /* Smaller font size for footer */
 }

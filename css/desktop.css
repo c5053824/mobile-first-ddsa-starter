@@ -1,46 +1,59 @@
 /* Desktop Styles */
+
+/* Layout containers: center content and set max width */
 header {
   max-width: 1280px;
   margin: auto;
 }
+
 main {
   max-width: 1280px;
   margin: 0 auto 8rem auto;
 }
-.articles {
-  flex-wrap: nowrap;
-  font-size: 1.2rem;
-}
-.articles > div {
-  flex: 1 1 25%;
-  padding: 0;
-  margin: 0 20px;
-}
-.articles > div:first-child {
-  margin-left: 0;
-}
-.articles > div:last-child {
-  margin-right: 0;
-}
-nav ul {
-  display: flex;
-}
-nav ul li {
-  padding: 4px;
-  border-bottom: none;
-}
-nav ul li a {
-  margin: 0 15px;
-  border: none;
-}
-nav ul li a:hover {
-  border-bottom: 3px solid #fff;
-}
+
+/* Navigation styles */
 nav {
   height: 80px;
   flex: 1 1 80%;
   display: flex;
   justify-content: flex-end;
-  /* For mobile toggle */
-  overflow: auto;
+  overflow: auto; /* Allows horizontal scrolling if needed */
+}
+
+nav ul {
+  display: flex; /* Horizontal navigation */
+}
+
+nav ul li {
+  padding: 4px;
+  border-bottom: none;
+}
+
+nav ul li a {
+  margin: 0 15px;
+  border: none;
+}
+
+nav ul li a:hover {
+  border-bottom: 3px solid #fff; /* Highlight on hover */
+}
+
+/* Articles section styles */
+.articles {
+  flex-wrap: nowrap; /* Prevent wrapping on desktop */
+  font-size: 1.2rem;
+}
+
+.articles > div {
+  flex: 1 1 25%; /* Four articles per row */
+  padding: 0;
+  margin: 0 20px;
+}
+
+.articles > div:first-child {
+  margin-left: 0;
+}
+
+.articles > div:last-child {
+  margin-right: 0;
 }
