@@ -26,7 +26,7 @@
     }
   };
 
-  burgerMenu.addEventListener("click", toggleMenu);
+  burgerMenu.addEventListener("click", toggleMenu); // EventListener captures the event
   window.addEventListener("resize", updateMenuOnResize);
 
   // initial setup
