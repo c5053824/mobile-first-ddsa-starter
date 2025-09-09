@@ -43,6 +43,19 @@ nav ul li a:hover {
   border-bottom: 3px solid #fff; /* Highlight on hover */
 }
 
+nav{
+  /* For mobile toggle */
+  overflow: visible;
+  margin-top:40px;
+  height: 80px;
+}
+nav.desktop {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 /* Articles section styles */
 .articles {
   flex-wrap: nowrap; /* Prevent wrapping on desktop */
