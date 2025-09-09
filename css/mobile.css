@@ -101,7 +101,7 @@ nav.open {
 /* when open, show "close" icon */
 .burgerMenuContainer img.open {
     content: url("/images/whiteClose.svg");
-
+}
 
 /* Footer styling for background and spacing */
 footer{
